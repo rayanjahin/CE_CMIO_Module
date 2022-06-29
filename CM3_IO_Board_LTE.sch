@@ -1,0 +1,160 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Bus_PCI_Express_Mini J1
+U 1 1 62A6A94D
+P 4800 3200
+F 0 "J1" H 4800 1911 50  0000 C CNN
+F 1 "Bus_PCI_Express_Mini" H 4800 1820 50  0000 C CNN
+F 2 "Connector_PCBEdge:BUS_PCI_Express_Mini" H 4800 3200 50  0001 C CNN
+F 3 "~" H 4650 2050 50  0001 C CNN
+	1    4800 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 1900 4400 1800
+Wire Wire Line
+	4400 1800 4500 1800
+Wire Wire Line
+	4800 1800 4800 1900
+Wire Wire Line
+	4700 1900 4700 1800
+Connection ~ 4700 1800
+Wire Wire Line
+	4700 1800 4800 1800
+Wire Wire Line
+	4600 1900 4600 1800
+Connection ~ 4600 1800
+Wire Wire Line
+	4600 1800 4700 1800
+Wire Wire Line
+	4500 1900 4500 1800
+Connection ~ 4500 1800
+Wire Wire Line
+	4500 1800 4600 1800
+Wire Wire Line
+	4100 2500 3950 2500
+Wire Wire Line
+	3950 2500 3950 2450
+Wire Wire Line
+	3950 2450 3850 2450
+Wire Wire Line
+	4100 2600 3850 2600
+Text GLabel 3850 2450 0    50   Input ~ 0
+LTE_P
+Text GLabel 3850 2600 0    50   Input ~ 0
+LTE_N
+NoConn ~ 4100 4200
+NoConn ~ 4100 4100
+NoConn ~ 4100 4000
+NoConn ~ 4100 3900
+NoConn ~ 4100 3700
+NoConn ~ 4100 3600
+NoConn ~ 4100 3400
+NoConn ~ 4100 3300
+NoConn ~ 4100 3100
+NoConn ~ 4100 3000
+NoConn ~ 4100 2900
+NoConn ~ 4100 2800
+NoConn ~ 5500 4200
+NoConn ~ 5500 4100
+NoConn ~ 5500 4000
+NoConn ~ 5500 3900
+NoConn ~ 5500 3800
+NoConn ~ 5500 3700
+NoConn ~ 5500 3600
+NoConn ~ 5500 3400
+NoConn ~ 5500 3300
+NoConn ~ 5500 3200
+NoConn ~ 5500 3100
+NoConn ~ 5500 2900
+NoConn ~ 5500 2800
+NoConn ~ 5000 1900
+NoConn ~ 5100 1900
+NoConn ~ 5200 1900
+NoConn ~ 5500 2500
+NoConn ~ 5500 2400
+$Comp
+L Device:LED D3
+U 1 1 62A9AB43
+P 5950 2600
+F 0 "D3" H 5943 2345 50  0000 C CNN
+F 1 "LED" H 5943 2436 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 5950 2600 50  0001 C CNN
+F 3 "~" H 5950 2600 50  0001 C CNN
+	1    5950 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R9
+U 1 1 62A9BBC1
+P 6150 2850
+F 0 "R9" H 6218 2896 50  0000 L CNN
+F 1 "200" H 6218 2805 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6190 2840 50  0001 C CNN
+F 3 "~" H 6150 2850 50  0001 C CNN
+	1    6150 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 62A9C2F0
+P 6150 3150
+F 0 "#PWR0121" H 6150 2900 50  0001 C CNN
+F 1 "GND" H 6155 2977 50  0000 C CNN
+F 2 "" H 6150 3150 50  0001 C CNN
+F 3 "" H 6150 3150 50  0001 C CNN
+	1    6150 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2600 6150 2600
+Wire Wire Line
+	6150 2600 6150 2700
+Wire Wire Line
+	5800 2600 5500 2600
+Wire Wire Line
+	6150 3000 6150 3150
+Wire Wire Line
+	4800 4400 4800 4450
+Wire Wire Line
+	4800 4450 4900 4450
+$Comp
+L power:GND #PWR0122
+U 1 1 62A9D4D2
+P 5400 4700
+F 0 "#PWR0122" H 5400 4450 50  0001 C CNN
+F 1 "GND" H 5405 4527 50  0000 C CNN
+F 2 "" H 5400 4700 50  0001 C CNN
+F 3 "" H 5400 4700 50  0001 C CNN
+	1    5400 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4450 5400 4700
+Text GLabel 4500 1450 0    50   Input ~ 0
+LTE_3V3
+Wire Wire Line
+	4800 1800 4800 1450
+Wire Wire Line
+	4800 1450 4500 1450
+Connection ~ 4800 1800
+Wire Wire Line
+	4900 4400 4900 4450
+Connection ~ 4900 4450
+Wire Wire Line
+	4900 4450 5400 4450
+$EndSCHEMATC

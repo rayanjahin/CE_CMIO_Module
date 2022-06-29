@@ -1,0 +1,280 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_USB:FE1.1s U1
+U 1 1 629EF2F5
+P 4750 3000
+F 0 "U1" H 4750 1811 50  0000 C CNN
+F 1 "FE1.1s" H 4750 1720 50  0000 C CNN
+F 2 "Package_SO:SSOP-28_3.9x9.9mm_P0.635mm" H 5800 1500 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2991/FE1.1s+Data+Sheet+(Rev.+1.0).pdf" H 4750 3000 50  0001 C CNN
+	1    4750 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2300 4050 2300
+Wire Wire Line
+	4050 2400 3800 2400
+Text GLabel 3800 2300 0    50   Input ~ 0
+USB_UP_P
+Text GLabel 3800 2400 0    50   Input ~ 0
+USB_UP_N
+Wire Wire Line
+	4050 2600 3950 2600
+Wire Wire Line
+	3950 2600 3950 2700
+Wire Wire Line
+	3950 2700 4050 2700
+Wire Wire Line
+	3950 2700 3950 2750
+Wire Wire Line
+	3950 2800 4050 2800
+Connection ~ 3950 2700
+$Comp
+L Device:R_US R8
+U 1 1 62A28212
+P 3550 3900
+F 0 "R8" V 3345 3900 50  0000 C CNN
+F 1 "2.7k" V 3436 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3590 3890 50  0001 C CNN
+F 3 "~" H 3550 3900 50  0001 C CNN
+	1    3550 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 3900 3700 3900
+$Comp
+L power:GND #PWR0114
+U 1 1 62A291EB
+P 3300 4050
+F 0 "#PWR0114" H 3300 3800 50  0001 C CNN
+F 1 "GND" H 3305 3877 50  0000 C CNN
+F 2 "" H 3300 4050 50  0001 C CNN
+F 3 "" H 3300 4050 50  0001 C CNN
+	1    3300 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 4050 3300 3900
+Wire Wire Line
+	3300 3900 3400 3900
+Wire Wire Line
+	4750 1900 4750 1850
+Wire Wire Line
+	4750 1850 4800 1850
+Wire Wire Line
+	4850 1850 4850 1900
+Wire Wire Line
+	4950 1900 4950 1850
+Wire Wire Line
+	4950 1850 5000 1850
+Wire Wire Line
+	5050 1850 5050 1900
+Wire Wire Line
+	3950 2750 3450 2750
+Wire Wire Line
+	3250 2750 3250 1700
+Wire Wire Line
+	3250 1700 3850 1700
+Wire Wire Line
+	4800 1700 4800 1850
+Connection ~ 3950 2750
+Wire Wire Line
+	3950 2750 3950 2800
+Connection ~ 4800 1850
+Wire Wire Line
+	4800 1850 4850 1850
+Wire Wire Line
+	4050 2100 3850 2100
+Wire Wire Line
+	3850 2100 3850 1700
+Connection ~ 3850 1700
+Wire Wire Line
+	3850 1700 4800 1700
+Wire Wire Line
+	5450 2100 5700 2100
+Wire Wire Line
+	5450 2200 5700 2200
+Text GLabel 5700 2100 2    50   Input ~ 0
+LTE_P
+Text GLabel 5700 2200 2    50   Input ~ 0
+LTE_N
+$Comp
+L power:GND #PWR0115
+U 1 1 62A4B361
+P 5450 1600
+F 0 "#PWR0115" H 5450 1350 50  0001 C CNN
+F 1 "GND" H 5455 1427 50  0000 C CNN
+F 2 "" H 5450 1600 50  0001 C CNN
+F 3 "" H 5450 1600 50  0001 C CNN
+	1    5450 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 1600 5450 1550
+Wire Wire Line
+	5000 1850 5000 1250
+Wire Wire Line
+	5000 1250 5450 1250
+Connection ~ 5000 1850
+Wire Wire Line
+	5000 1850 5050 1850
+$Comp
+L power:GND #PWR0116
+U 1 1 62A4E41D
+P 3450 3250
+F 0 "#PWR0116" H 3450 3000 50  0001 C CNN
+F 1 "GND" H 3455 3077 50  0000 C CNN
+F 2 "" H 3450 3250 50  0001 C CNN
+F 3 "" H 3450 3250 50  0001 C CNN
+	1    3450 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3250 3450 3100
+Wire Wire Line
+	3450 2800 3450 2750
+Connection ~ 3450 2750
+Wire Wire Line
+	3450 2750 3250 2750
+$Comp
+L Device:Crystal Y1
+U 1 1 62A560A9
+P 3800 3400
+F 0 "Y1" H 3800 3668 50  0000 C CNN
+F 1 "12MHz" H 3800 3577 50  0000 C CNN
+F 2 "Crystal:Crystal_HC18-U_Vertical" H 3800 3400 50  0001 C CNN
+F 3 "~" H 3800 3400 50  0001 C CNN
+	1    3800 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3400 4000 3400
+Wire Wire Line
+	4000 3600 4050 3600
+Wire Wire Line
+	4000 3400 4000 3600
+Wire Wire Line
+	3650 3400 3650 3650
+Wire Wire Line
+	3650 3650 3850 3650
+Wire Wire Line
+	3850 3650 3850 3700
+Wire Wire Line
+	3850 3700 4050 3700
+$Comp
+L power:GND #PWR0117
+U 1 1 62A59F3F
+P 5100 4100
+F 0 "#PWR0117" H 5100 3850 50  0001 C CNN
+F 1 "GND" H 5105 3927 50  0000 C CNN
+F 2 "" H 5100 4100 50  0001 C CNN
+F 3 "" H 5100 4100 50  0001 C CNN
+	1    5100 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4100 5100 4100
+NoConn ~ 5450 3400
+NoConn ~ 5450 3500
+NoConn ~ 5450 3600
+NoConn ~ 5450 3700
+NoConn ~ 5450 3900
+Wire Wire Line
+	5450 3000 5750 3000
+Wire Wire Line
+	5450 3100 5750 3100
+Text GLabel 5750 3000 2    50   Input ~ 0
+USB3_P
+Text GLabel 5750 3100 2    50   Input ~ 0
+USB3_N
+$Comp
+L power:+5V #PWR0118
+U 1 1 62AD5147
+P 4550 1100
+F 0 "#PWR0118" H 4550 950 50  0001 C CNN
+F 1 "+5V" H 4565 1273 50  0000 C CNN
+F 2 "" H 4550 1100 50  0001 C CNN
+F 3 "" H 4550 1100 50  0001 C CNN
+	1    4550 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 1100 4550 1900
+$Comp
+L power:+5V #PWR0119
+U 1 1 62AD6191
+P 6500 1050
+F 0 "#PWR0119" H 6500 900 50  0001 C CNN
+F 1 "+5V" H 6515 1223 50  0000 C CNN
+F 2 "" H 6500 1050 50  0001 C CNN
+F 3 "" H 6500 1050 50  0001 C CNN
+	1    6500 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L compute_module-rescue-2022-06-08-12-18-04:C C2
+U 1 1 62AD76D3
+P 5450 1400
+F 0 "C2" H 5565 1446 50  0000 L CNN
+F 1 "10uF" H 5565 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5488 1250 50  0001 C CNN
+F 3 "" H 5450 1400 50  0000 C CNN
+	1    5450 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L compute_module-rescue-2022-06-08-12-18-04:C C3
+U 1 1 62AD7C73
+P 6500 1300
+F 0 "C3" H 6615 1346 50  0000 L CNN
+F 1 "100nF" H 6615 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6538 1150 50  0001 C CNN
+F 3 "" H 6500 1300 50  0000 C CNN
+	1    6500 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 62AD8108
+P 6500 1650
+F 0 "#PWR0120" H 6500 1400 50  0001 C CNN
+F 1 "GND" H 6505 1477 50  0000 C CNN
+F 2 "" H 6500 1650 50  0001 C CNN
+F 3 "" H 6500 1650 50  0001 C CNN
+	1    6500 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1150 6500 1050
+Wire Wire Line
+	6500 1450 6500 1650
+$Comp
+L compute_module-rescue-2022-06-08-12-18-04:C C1
+U 1 1 62AD9AAC
+P 3450 2950
+F 0 "C1" H 3565 2996 50  0000 L CNN
+F 1 "10uF" H 3565 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3488 2800 50  0001 C CNN
+F 3 "" H 3450 2950 50  0000 C CNN
+	1    3450 2950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5450 2400
+NoConn ~ 5450 2500
+NoConn ~ 5450 2700
+NoConn ~ 5450 2800
+$EndSCHEMATC

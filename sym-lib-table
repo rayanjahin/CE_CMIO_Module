@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name KiCADinfo_RPi-modules)(type Legacy)(uri C:/Users/User/Downloads/raspberry-pi-compute-module-base-board-master/raspberry-pi-compute-module-base-board-master/libs/components/KiCADinfo_RPi-modules.lib)(options "")(descr ""))
+  (lib (name dk_USB-DVI-HDMI-Connectors)(type Legacy)(uri C:/Users/User/Downloads/raspberry-pi-compute-module-base-board-master/raspberry-pi-compute-module-base-board-master/libs/components/dk_USB-DVI-HDMI-Connectors.lib)(options "")(descr ""))
+  (lib (name jack_trs_5pins)(type Legacy)(uri C:/Users/User/Downloads/raspberry-pi-compute-module-base-board-master/raspberry-pi-compute-module-base-board-master/libs/components/jack_trs_5pins.lib)(options "")(descr ""))
+  (lib (name REG1117)(type Legacy)(uri C:/Users/User/Downloads/raspberry-pi-compute-module-base-board-master/raspberry-pi-compute-module-base-board-master/libs/components/REG1117.lib)(options "")(descr ""))
+  (lib (name compute_module-rescue-2022-05-16-12-17-14)(type Legacy)(uri C:/Users/User/Downloads/raspberry-pi-compute-module-base-board-master/raspberry-pi-compute-module-base-board-master/rescue-backup/compute_module-rescue-2022-05-16-12-17-14.lib)(options "")(descr ""))
+  (lib (name compute_module-rescue-2022-06-08-12-18-04)(type Legacy)(uri C:/Users/User/Downloads/raspberry-pi-compute-module-base-board-master/raspberry-pi-compute-module-base-board-master/rescue-backup/compute_module-rescue-2022-06-08-12-18-04.lib)(options "")(descr ""))
+)

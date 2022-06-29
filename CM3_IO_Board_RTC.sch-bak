@@ -1,0 +1,191 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Timer_RTC:DS3231M U2
+U 1 1 62BEF504
+P 5600 3200
+F 0 "U2" H 5600 2711 50  0000 C CNN
+F 1 "DS3231M" H 5600 2620 50  0000 C CNN
+F 2 "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" H 5600 2600 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS3231.pdf" H 5870 3250 50  0001 C CNN
+	1    5600 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3000 4900 3000
+Wire Wire Line
+	5100 3100 5000 3100
+Text GLabel 4800 3000 0    50   Input ~ 0
+RTC_SCL
+Text GLabel 4800 3100 0    50   Input ~ 0
+RTC_SDA
+$Comp
+L power:+3.3V #PWR0123
+U 1 1 62BF071C
+P 5500 2700
+F 0 "#PWR0123" H 5500 2550 50  0001 C CNN
+F 1 "+3.3V" H 5515 2873 50  0000 C CNN
+F 2 "" H 5500 2700 50  0001 C CNN
+F 3 "" H 5500 2700 50  0001 C CNN
+	1    5500 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2800 5500 2700
+$Comp
+L power:GND #PWR0124
+U 1 1 62BF144B
+P 5950 3800
+F 0 "#PWR0124" H 5950 3550 50  0001 C CNN
+F 1 "GND" H 5955 3627 50  0000 C CNN
+F 2 "" H 5950 3800 50  0001 C CNN
+F 3 "" H 5950 3800 50  0001 C CNN
+	1    5950 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3600 5600 3650
+Wire Wire Line
+	5600 3650 5950 3650
+Wire Wire Line
+	5950 3650 5950 3800
+$Comp
+L Device:R_US R10
+U 1 1 62BF1C13
+P 4900 2300
+F 0 "R10" V 4695 2300 50  0000 C CNN
+F 1 "10k" V 4786 2300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4940 2290 50  0001 C CNN
+F 3 "~" H 4900 2300 50  0001 C CNN
+	1    4900 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R11
+U 1 1 62BF2106
+P 5100 2550
+F 0 "R11" V 4895 2550 50  0000 C CNN
+F 1 "10k" V 4986 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5140 2540 50  0001 C CNN
+F 3 "~" H 5100 2550 50  0001 C CNN
+	1    5100 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0125
+U 1 1 62BF2349
+P 5100 1850
+F 0 "#PWR0125" H 5100 1700 50  0001 C CNN
+F 1 "+3.3V" H 5115 2023 50  0000 C CNN
+F 2 "" H 5100 1850 50  0001 C CNN
+F 3 "" H 5100 1850 50  0001 C CNN
+	1    5100 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2300 4750 2750
+Wire Wire Line
+	4750 2750 4900 2750
+Wire Wire Line
+	4900 2750 4900 3000
+Connection ~ 4900 3000
+Wire Wire Line
+	4900 3000 4800 3000
+Wire Wire Line
+	4950 2550 4950 2700
+Wire Wire Line
+	4950 2700 5000 2700
+Wire Wire Line
+	5000 2700 5000 3100
+Connection ~ 5000 3100
+Wire Wire Line
+	5000 3100 4800 3100
+Wire Wire Line
+	5050 2300 5150 2300
+Wire Wire Line
+	5150 2300 5150 1900
+Wire Wire Line
+	5150 1900 5100 1900
+Wire Wire Line
+	5100 1900 5100 1850
+Wire Wire Line
+	5150 2300 5250 2300
+Wire Wire Line
+	5250 2300 5250 2550
+Connection ~ 5150 2300
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 62BF52D0
+P 6650 2900
+F 0 "BT1" H 6768 2996 50  0000 L CNN
+F 1 "Battery_Cell" H 6768 2905 50  0000 L CNN
+F 2 "Battery_Holder:CR12202" V 6650 2960 50  0001 C CNN
+F 3 "~" V 6650 2960 50  0001 C CNN
+	1    6650 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2800 5600 2650
+Wire Wire Line
+	5600 2650 6650 2650
+Wire Wire Line
+	6650 2650 6650 2700
+Wire Wire Line
+	6650 3000 6650 3650
+Wire Wire Line
+	6650 3650 5950 3650
+Connection ~ 5950 3650
+NoConn ~ 6100 3000
+NoConn ~ 6100 3300
+NoConn ~ 5100 3400
+$Comp
+L Device:C C4
+U 1 1 62AF5371
+P 6100 2100
+F 0 "C4" H 6215 2146 50  0000 L CNN
+F 1 "100nF" H 6215 2055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6138 1950 50  0001 C CNN
+F 3 "~" H 6100 2100 50  0001 C CNN
+	1    6100 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 62AF6ABF
+P 6100 2350
+F 0 "#PWR0126" H 6100 2100 50  0001 C CNN
+F 1 "GND" H 6105 2177 50  0000 C CNN
+F 2 "" H 6100 2350 50  0001 C CNN
+F 3 "" H 6100 2350 50  0001 C CNN
+	1    6100 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0127
+U 1 1 62AF6F56
+P 6100 1900
+F 0 "#PWR0127" H 6100 1750 50  0001 C CNN
+F 1 "+3.3V" H 6115 2073 50  0000 C CNN
+F 2 "" H 6100 1900 50  0001 C CNN
+F 3 "" H 6100 1900 50  0001 C CNN
+	1    6100 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 1950 6100 1900
+Wire Wire Line
+	6100 2350 6100 2250
+$EndSCHEMATC
