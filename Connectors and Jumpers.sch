@@ -309,11 +309,7 @@ Wire Wire Line
 Wire Wire Line
 	1250 2100 1450 2100
 Wire Wire Line
-	1250 2200 1250 2250
-Wire Wire Line
 	1250 2300 1450 2300
-Wire Wire Line
-	1250 2200 1450 2200
 $Comp
 L power:GND #PWR0155
 U 1 1 62B1C551
@@ -327,7 +323,6 @@ F 3 "" H 1150 2250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1150 2250 1250 2250
-Connection ~ 1250 2250
 Wire Wire Line
 	1250 2250 1250 2300
 Wire Wire Line
@@ -489,4 +484,9 @@ Text GLabel 3650 3550 3    50   Input ~ 0
 TXD1
 Text GLabel 3950 3550 3    50   Input ~ 0
 RXD1
+Wire Wire Line
+	1250 2100 1250 2200
+Wire Wire Line
+	1250 2200 1450 2200
+Connection ~ 1250 2100
 $EndSCHEMATC
