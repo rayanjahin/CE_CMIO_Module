@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Interface_USB:FE1.1s U1
-U 1 1 629EF2F5
-P 4750 3000
-F 0 "U1" H 4750 1811 50  0000 C CNN
-F 1 "FE1.1s" H 4750 1720 50  0000 C CNN
-F 2 "Package_SO:SSOP-28_3.9x9.9mm_P0.635mm" H 5800 1500 50  0001 C CNN
-F 3 "https://cdn-shop.adafruit.com/product-files/2991/FE1.1s+Data+Sheet+(Rev.+1.0).pdf" H 4750 3000 50  0001 C CNN
-	1    4750 3000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3800 2300 4050 2300
 Wire Wire Line
@@ -273,8 +262,33 @@ F 3 "" H 3450 2950 50  0000 C CNN
 	1    3450 2950
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5450 2400
-NoConn ~ 5450 2500
 NoConn ~ 5450 2700
 NoConn ~ 5450 2800
+$Comp
+L Interface_USB:FE1.1s U1
+U 1 1 629EF2F5
+P 4750 3000
+F 0 "U1" H 4750 1811 50  0000 C CNN
+F 1 "FE1.1s" H 4750 1720 50  0000 C CNN
+F 2 "Package_SO:SSOP-28_3.9x9.9mm_P0.635mm" H 5800 1500 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2991/FE1.1s+Data+Sheet+(Rev.+1.0).pdf" H 4750 3000 50  0001 C CNN
+	1    4750 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2600 5600 2600
+Wire Wire Line
+	5600 2600 5600 2500
+Wire Wire Line
+	5600 2500 5450 2500
+Wire Wire Line
+	5450 2400 6000 2400
+Wire Wire Line
+	6000 2400 6000 2350
+Wire Wire Line
+	6000 2350 6100 2350
+Text GLabel 6100 2350 1    50   Input ~ 0
+TP_P
+Text GLabel 6100 2600 3    50   Input ~ 0
+TP_N
 $EndSCHEMATC

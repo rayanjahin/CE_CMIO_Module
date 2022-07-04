@@ -489,4 +489,53 @@ Wire Wire Line
 Wire Wire Line
 	1250 2200 1450 2200
 Connection ~ 1250 2100
+$Comp
+L Connector_Generic:Conn_01x04 J21
+U 1 1 62C7FE11
+P 2400 5300
+F 0 "J21" H 2480 5292 50  0000 L CNN
+F 1 "Conn_01x04" H 2480 5201 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2400 5300 50  0001 C CNN
+F 3 "~" H 2400 5300 50  0001 C CNN
+	1    2400 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5300 2000 5300
+Text GLabel 2000 5300 0    50   Input ~ 0
+TP_N
+Wire Wire Line
+	2200 5400 2000 5400
+Text GLabel 2000 5400 0    50   Input ~ 0
+TP_P
+$Comp
+L power:GND #PWR0147
+U 1 1 62C8C13E
+P 2100 5550
+F 0 "#PWR0147" H 2100 5300 50  0001 C CNN
+F 1 "GND" H 2105 5377 50  0000 C CNN
+F 2 "" H 2100 5550 50  0001 C CNN
+F 3 "" H 2100 5550 50  0001 C CNN
+	1    2100 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 5550 2100 5500
+Wire Wire Line
+	2100 5500 2200 5500
+$Comp
+L power:+5V #PWR0156
+U 1 1 62C8EF7E
+P 2150 5150
+F 0 "#PWR0156" H 2150 5000 50  0001 C CNN
+F 1 "+5V" H 2165 5323 50  0000 C CNN
+F 2 "" H 2150 5150 50  0001 C CNN
+F 3 "" H 2150 5150 50  0001 C CNN
+	1    2150 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 5150 2150 5200
+Wire Wire Line
+	2150 5200 2200 5200
 $EndSCHEMATC
